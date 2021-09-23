@@ -1,0 +1,19 @@
+install visual studio 
+Choose workloads
+- desktop development with c++
+
+window powershell 
+```
+git clone https://github.com/microsoft/vcpkg
+cd vcpkg
+./vcpkg/bootstrap-vcpkg.sh
+.\vcpkg search mongodb
+.\vcpkg install mongo-cxx-driver
+.\vcpkg integrate install
+.\vcpkg install curl[tool]
+./vcpkg.exe install curl[non-http]:x86-windows-static
+./vcpkg install curl[core,tool,openssl] --recurse
+```
+
+command line of visual studio
+- git clone https://github.com/curl/curl.git

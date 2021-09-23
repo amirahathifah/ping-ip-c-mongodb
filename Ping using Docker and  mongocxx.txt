@@ -1,0 +1,14 @@
+cd C:\Users\User\Downloads\mongo-cxx-driver-ssl-example-master
+
+```
+docker build -t example-mongodb .
+docker run -it <images>
+docker stop <container>
+docker start <container>
+docker exec -it <container>
+docker exec -it --user root <container> /bin/bash
+apt install update
+apt install nano
+apt install curl
+c++ --std=c++11 <input>.cpp -o input $(pkg-config --cflags --libs libmongocxx)
+```
